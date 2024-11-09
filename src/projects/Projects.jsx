@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { projectList } from '../projects/projectList'
 import odinProjectIcon from '../assets/the-odin-project.svg';
+import './projects.styles.css'
 
 function Projects() {
     const [count, setCount] = useState(0)
@@ -14,7 +15,8 @@ function Projects() {
       <Link to='/'>Home</Link>
         {projectList.map(project =>(
           <div key={project.name} className='project'>
-            <p>{project.name}</p>
+            <h1>{project.name}</h1>
+            <p>{project.description}</p>
             {(project.odinProjectUrl) && (
                 // <a href={project.odinProjectUrl}>The Odin Project</a>
                 <a href={project.odinProjectUrl}>
