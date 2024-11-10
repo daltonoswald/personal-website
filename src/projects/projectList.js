@@ -5,6 +5,9 @@ import postgreSQL from '../assets/postgresql-original-wordmark.svg'
 import prisma from '../assets/prisma.svg'
 import mongo from '../assets/mongodb-plain-wordmark.svg'
 
+import runescapedle from '../assets/screenshots/runescapedle.png'
+import memoryCard from '../assets/screenshots/memory-card.png'
+
 export const projectList = [
     {
         name: 'OdinBook',
@@ -41,7 +44,7 @@ export const projectList = [
         description: 'A Wordle-like game where you guess the daily Oldschool Runescape boss based on clues from previous guesses.',
         githubUrl: 'https://github.com/daltonoswald/runescapedle',
         liveUrl: 'https://daltonoswald-runescapedle.netlify.app/',
-        screenshot: null,
+        screenshot: runescapedle,
         libraries: [
             {
                 name: 'React',
@@ -81,7 +84,7 @@ export const projectList = [
         githubUrl: 'https://github.com/daltonoswald/memory-card',
         liveUrl: 'https://daltonoswald-memory-card.netlify.app/',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/node-path-react-new-memory-card',
-        screenshot: null,
+        screenshot: memoryCard,
         libraries: [
             {
                 name: 'React',
@@ -109,7 +112,7 @@ export const projectList = [
     },
     {
         name: 'File Uploader',
-        description: 'A Dropbox-like website to upload images.',
+        description: 'A Google Drive-like website to upload images.',
         githubUrl: 'https://github.com/daltonoswald/file-uploader',
         liveUrl: 'https://daltonoswald-file-uploader-production.up.railway.app/users/log-in',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/nodejs-file-uploader',
@@ -149,7 +152,7 @@ export const projectList = [
     },
     {
         name: 'Messaging App',
-        description: 'A messaging app.',
+        description: 'An app that allows you to send private messages to other users.',
         githubUrl: 'https://github.com/daltonoswald/messaging-app',
         liveUrl: 'https://daltonoswald-messaging-app.netlify.app/',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/nodejs-messaging-app',
