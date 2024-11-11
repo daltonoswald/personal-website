@@ -5,8 +5,14 @@ import postgreSQL from '../assets/postgresql-original-wordmark.svg'
 import prisma from '../assets/prisma.svg'
 import mongo from '../assets/mongodb-plain-wordmark.svg'
 
+import odinbook from '../assets/screenshots/odinbook.png'
 import runescapedle from '../assets/screenshots/runescapedle.png'
 import memoryCard from '../assets/screenshots/memory-card.png'
+import photoTaggingApp from '../assets/screenshots/photo-tagging-game.png'
+import clubhouse from '../assets/screenshots/club-house.png'
+import fileUploader from '../assets/screenshots/file-uploader.png'
+import shoppingCart from '../assets/screenshots/shopping-cart.png'
+import messagingApp from '../assets/screenshots/messaging-app.png'
 
 export const projectList = [
     {
@@ -15,7 +21,7 @@ export const projectList = [
         githubUrl: 'https://github.com/daltonoswald/odin-book',
         liveUrl: 'https://daltonoswald-odinbook.netlify.app/',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/node-path-nodejs-odin-book',
-        screenshot: null,
+        screenshot: odinbook,
         libraries: [
             {
                 name: 'React',
@@ -58,7 +64,7 @@ export const projectList = [
         githubUrl: 'https://github.com/daltonoswald/photo-tagging-app',
         liveUrl: 'https://daltonoswald-photo-tagging-app.netlify.app/',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/nodejs-where-s-waldo-a-photo-tagging-app',
-        screenshot: null,
+        screenshot: photoTaggingApp,
         libraries: [
             {
                 name: 'NodeJS',
@@ -98,7 +104,7 @@ export const projectList = [
         githubUrl: 'https://github.com/daltonoswald/club-house',
         liveUrl: 'https://daltonoswald-club-house-production.up.railway.app/',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/node-path-nodejs-members-only',
-        screenshot: null,
+        screenshot: clubhouse,
         libraries: [
             {
                 name: 'NodeJS',
@@ -116,7 +122,7 @@ export const projectList = [
         githubUrl: 'https://github.com/daltonoswald/file-uploader',
         liveUrl: 'https://daltonoswald-file-uploader-production.up.railway.app/users/log-in',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/nodejs-file-uploader',
-        screenshot: null,
+        screenshot: fileUploader,
         libraries: [
             {
                 name: 'NodeJS',
@@ -142,7 +148,7 @@ export const projectList = [
         githubUrl: 'https://github.com/daltonoswald/shopping-cart',
         liveUrl: 'https://dalton-oswald-shopping-cart.netlify.app/',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart',
-        screenshot: null,
+        screenshot: shoppingCart,
         libraries: [
             {
                 name: 'React',
@@ -156,7 +162,7 @@ export const projectList = [
         githubUrl: 'https://github.com/daltonoswald/messaging-app',
         liveUrl: 'https://daltonoswald-messaging-app.netlify.app/',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/nodejs-messaging-app',
-        screenshot: null,
+        screenshot: messagingApp,
         libraries: [
             {
                 name: 'NodeJS',
