@@ -1,5 +1,5 @@
 import { projectList } from '../projects/projectList'
-import odinProjectIcon from '../assets/the-odin-project.svg';
+import odinProjectIcon from '../assets/icons/the-odin-project.svg';
 import './projectsContainer.styles.css'
 
 export default function ProjectsContainer() {
@@ -22,7 +22,7 @@ export default function ProjectsContainer() {
             <p>{project.description}</p>
             <div className='library-container'>
                 {project.libraries.map((library) => (
-                <div className='library' key={project.name}>
+                <div className='library' key={library.name}>
                     <img className='library-icon' src={library.icon} alt={library.name} />
                     {/* <p className='library-name'>{library.name}</p> */}
                 </div>

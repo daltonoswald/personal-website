@@ -1,0 +1,9 @@
+.profile-picture {
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid red;
+}
+
+.home-skill {
+    height: 32px;
+}

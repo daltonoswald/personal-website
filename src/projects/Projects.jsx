@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ProjectsContainer from './ProjectsContainer'
+import Nav from '../nav/Nav'
 
 function Projects() {
     const [count, setCount] = useState(0)
@@ -10,7 +11,7 @@ function Projects() {
   
     return (
       <>
-      <Link to='/'>Home</Link>
+      <Nav />
       <ProjectsContainer />
       </>
     )

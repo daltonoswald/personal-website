@@ -1,9 +1,9 @@
-import react from '../assets/react-original-wordmark.svg';
-import nodeJS from '../assets/nodejs-original.svg'
-import express from '../assets/express-original.svg'
-import postgreSQL from '../assets/postgresql-original-wordmark.svg'
-import prisma from '../assets/prisma.svg'
-import mongo from '../assets/mongodb-plain-wordmark.svg'
+import react from '../assets/icons/react-original-wordmark.svg';
+import nodeJS from '../assets/icons/nodejs-original.svg'
+import express from '../assets/icons/express-original.svg'
+import postgreSQL from '../assets/icons/postgresql-original-wordmark.svg'
+import prisma from '../assets/icons/prisma.svg'
+import mongo from '../assets/icons/mongodb-plain-wordmark.svg'
 
 import odinbook from '../assets/screenshots/odinbook.png'
 import runescapedle from '../assets/screenshots/runescapedle.png'
