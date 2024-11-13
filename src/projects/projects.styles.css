@@ -1,0 +1,7 @@
+.filter-icon {
+    height: 32px; 
+}
+
+.filter-icon:hover {
+    cursor: pointer;
+}

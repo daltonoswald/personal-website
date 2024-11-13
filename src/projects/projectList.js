@@ -22,18 +22,19 @@ export const projectList = [
         liveUrl: 'https://daltonoswald-odinbook.netlify.app/',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/node-path-nodejs-odin-book',
         screenshot: odinbook,
+        tags: ['React', 'Express', 'NodeJS', 'PostgreSQL', 'Prisma'],
         libraries: [
             {
                 name: 'React',
                 icon: react,
             },
             {
-                name: 'Express',
-                icon: express
-            },
-            {
                 name: 'NodeJS',
                 icon: nodeJS
+            },
+            {
+                name: 'Express',
+                icon: express
             },
             {
                 name: 'PostgreSQL',
@@ -51,6 +52,7 @@ export const projectList = [
         githubUrl: 'https://github.com/daltonoswald/runescapedle',
         liveUrl: 'https://daltonoswald-runescapedle.netlify.app/',
         screenshot: runescapedle,
+        tags: ['React'],
         libraries: [
             {
                 name: 'React',
@@ -65,7 +67,12 @@ export const projectList = [
         liveUrl: 'https://daltonoswald-photo-tagging-app.netlify.app/',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/nodejs-where-s-waldo-a-photo-tagging-app',
         screenshot: photoTaggingApp,
+        tags: ['React', 'Express', 'NodeJS', 'MongoDB'],
         libraries: [
+            {
+                name: 'React',
+                icon: react
+            },
             {
                 name: 'NodeJS',
                 icon: nodeJS
@@ -78,10 +85,6 @@ export const projectList = [
                 name: 'MongoDB',
                 icon: mongo
             },
-            {
-                name: 'React',
-                icon: react
-            }
         ]
     },
     {
@@ -91,6 +94,7 @@ export const projectList = [
         liveUrl: 'https://daltonoswald-memory-card.netlify.app/',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/node-path-react-new-memory-card',
         screenshot: memoryCard,
+        tags: ['React'],
         libraries: [
             {
                 name: 'React',
@@ -105,6 +109,7 @@ export const projectList = [
         liveUrl: 'https://daltonoswald-club-house-production.up.railway.app/',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/node-path-nodejs-members-only',
         screenshot: clubhouse,
+        tags: ['Express', 'NodeJS'],
         libraries: [
             {
                 name: 'NodeJS',
@@ -123,6 +128,7 @@ export const projectList = [
         liveUrl: 'https://daltonoswald-file-uploader-production.up.railway.app/users/log-in',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/nodejs-file-uploader',
         screenshot: fileUploader,
+        tags: ['Express', 'NodeJS', 'PostgreSQL', 'Prisma'],
         libraries: [
             {
                 name: 'NodeJS',
@@ -149,6 +155,7 @@ export const projectList = [
         liveUrl: 'https://dalton-oswald-shopping-cart.netlify.app/',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart',
         screenshot: shoppingCart,
+        tags: ['React'],
         libraries: [
             {
                 name: 'React',
@@ -163,7 +170,12 @@ export const projectList = [
         liveUrl: 'https://daltonoswald-messaging-app.netlify.app/',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/nodejs-messaging-app',
         screenshot: messagingApp,
+        tags: ['React', 'Express', 'NodeJS', 'MongoDB'],
         libraries: [
+            {
+                name: 'React',
+                icon: react
+            },
             {
                 name: 'NodeJS',
                 icon: nodeJS
@@ -176,10 +188,6 @@ export const projectList = [
                 name: 'MongoDB',
                 icon: mongo
             },
-            {
-                name: 'React',
-                icon: react
-            }
         ]
     },
 ]

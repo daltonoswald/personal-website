@@ -1,12 +1,11 @@
-import { projectList } from '../projects/projectList'
 import odinProjectIcon from '../assets/icons/the-odin-project.svg';
 import './projectsContainer.styles.css'
 
-export default function ProjectsContainer() {
+export default function ProjectsContainer({shownProjects}) {
     
     return (
         <div className='projects-container'>
-        {projectList.map(project =>(
+        {shownProjects.map(project =>(
           <div key={project.name} className='project'>
             <div className='project-header'>
                 <h1 className='project-title'>{project.name}</h1>
