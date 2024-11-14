@@ -1,4 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+#root {
+    font-size: 10px;
+    min-height: 100vh;
+}
+
 .content {
-    width: 75vw;
+    padding: 0 15vw;
     margin: 0 auto;
+    padding-top: 2em;
+    min-height: 100vh;
+}
+
+.darkmode {
+    background-color: #1a1a1a;
+    color: #f2f2f2 !important;
+}
+
+.darkmode-icon {
+    filter: invert(97%) sepia(44%) saturate(557%) hue-rotate(224deg) brightness(125) contrast(100%);
 }

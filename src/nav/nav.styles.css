@@ -1,0 +1,41 @@
+.nav {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15vw;
+    padding-top: 8px;
+}
+
+.nav-link {
+    display: flex;
+    gap: 1rem;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black
+}
+
+.nav-icon {
+    height: 24px;
+}
+
+.nav-title > p,
+.nav-link,
+.nav-name {
+    margin: 0;
+    font-size: 16px;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-author {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}

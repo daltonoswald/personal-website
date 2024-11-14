@@ -13,7 +13,7 @@ import prisma from '../assets/icons/prisma.svg'
 import mongo from '../assets/icons/mongodb-plain-wordmark.svg'
 
 
-function Projects() {
+function Projects({ isDark, setIsDark }) {
   const [currentFilter, setCurrentFilter] = useState('');
   const [shownProjects, setShownProjects] = useState(projectList)
   useEffect(() => {
@@ -32,17 +32,17 @@ function Projects() {
 
   return (
     <>
-    <Nav />
-    <div className='content'>
+    <Nav isDark={isDark} setIsDark={setIsDark} />
+    <div className={'content ' + (isDark ? 'darkmode' : 'lightmode')}>
       <div className='filter-container'>
         <img src={react} onClick={handleFilter} id='React' className='filter-icon' />
         <img src={nodeJS} onClick={handleFilter} id='NodeJS' className='filter-icon' />
-        <img src={express} onClick={handleFilter} id='Express' className='filter-icon' />
+        <img src={express} onClick={handleFilter} id='Express' className={'filter-icon ' + (isDark ? 'darkmode-icon' : null)} />
         <img src={postgreSQL} onClick={handleFilter} id='PostgreSQL' className='filter-icon' />
-        <img src={prisma} onClick={handleFilter} id='Prisma' className='filter-icon' />
+        <img src={prisma} onClick={handleFilter} id='Prisma' className={'filter-icon ' + (isDark ? 'darkmode-icon' : null)} />
         <img src={mongo} onClick={handleFilter} id='MongoDB' className='filter-icon' />
       </div>
-      <ProjectsContainer shownProjects={shownProjects} />
+      <ProjectsContainer shownProjects={shownProjects} isDark={isDark} />
     </div>
     </>
   )

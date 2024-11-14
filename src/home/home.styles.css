@@ -1,9 +1,28 @@
+.home-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 24px;
+}
+
 .profile-picture {
     height: 250px;
     border-radius: 50%;
-    border: 3px solid red;
+    border: 3px solid black;
 }
 
-.home-skill {
-    height: 32px;
+.profile-picture-darkmode {
+    border: 3px solid #f2f2f2;
+}
+
+.home-header-title {
+    font-size: 52px;
+}
+
+.home-hero {
+    font-size: 16px;
+}
+
+.home-header-greeting {
+    font-size: 20px;
 }

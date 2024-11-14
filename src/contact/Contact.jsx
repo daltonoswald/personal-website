@@ -6,7 +6,7 @@ import location from "../assets/icons/location-home.svg"
 import linkedIn from '../assets/icons/linkedin-original.svg'
 import github from '../assets/icons/github-original.svg'
 
-export default function Contact() {
+export default function Contact({ isDark, setIsDark }) {
 
     useEffect(() => {
         document.title = 'Contact | Dalton Oswald'
@@ -14,8 +14,8 @@ export default function Contact() {
 
     return (
         <>
-            <Nav />
-            <div className='content'>
+            <Nav isDark={isDark} setIsDark={setIsDark} />
+            <div className={'content ' + (isDark ? 'darkmode' : 'lightmode')}>
                 <div className='contact-me'>
                     <h1>Contact me</h1>
                     <div className='contact-container'>

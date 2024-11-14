@@ -1,12 +1,12 @@
 import odinProjectIcon from '../assets/icons/the-odin-project.svg';
 import './projectsContainer.styles.css'
 
-export default function ProjectsContainer({shownProjects}) {
+export default function ProjectsContainer({shownProjects, isDark}) {
     
     return (
         <div className='projects-container'>
         {shownProjects.map(project =>(
-          <div key={project.name} className='project'>
+          <div key={project.name} className={'project ' + (isDark ? 'project-darkmode' : 'null')}>
             <div className='project-header'>
                 <h1 className='project-title'>{project.name}</h1>
                 {(project.odinProjectUrl) && (
@@ -18,7 +18,7 @@ export default function ProjectsContainer({shownProjects}) {
             <a href={project.liveUrl} target="_blank">
                 <img className='project-image' src={project.screenshot} />
             </a>
-            <p>{project.description}</p>
+            <p className='project-description'>{project.description}</p>
             <div className='library-container'>
                 {project.libraries.map((library) => (
                 <div className='library' key={library.name}>
