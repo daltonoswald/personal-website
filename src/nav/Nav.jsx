@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 import profilePicture from '../assets/dalton-profile-picture.jpg'
 import github from '../assets/icons/github-original.svg'
 import linkedIn from '../assets/icons/linkedin-original.svg'
+import lightmodeIcon from '../assets/icons/lightmode.svg'
+import darkmodeIcon from '../assets/icons/darkmode.svg'
 import './nav.styles.css';
 
 export default function Nav ({ isDark, setIsDark}) {
@@ -29,7 +31,13 @@ export default function Nav ({ isDark, setIsDark}) {
                 </div>
                 <a href='https://github.com/daltonoswald'><img src={github} className={'nav-icon ' + (isDark ? 'darkmode-icon' : null)} alt='github icon' /></a>
                 <a href='https://www.linkedin.com/in/dalton-oswald-8aa955148'><img src={linkedIn} className='nav-icon' alt='linkedIn icon' /></a>
-                <button onClick={toggleLightDark}>Theme</button>
+                {/* <button onClick={toggleLightDark}>Theme</button> */}
+                {(isDark) && (
+                    <img className='toggle-mode-button darkmode-icon' src={lightmodeIcon} alt='toggle theme' onClick={toggleLightDark} />
+                )}
+                {(!isDark) && (
+                    <img className='toggle-mode-button lightmode-icon' src={darkmodeIcon} alt='toggle theme' onClick={toggleLightDark} />
+                )}
             </div>
         </div>
     )

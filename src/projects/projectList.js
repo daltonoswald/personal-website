@@ -109,7 +109,7 @@ export const projectList = [
         liveUrl: 'https://daltonoswald-club-house-production.up.railway.app/',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/node-path-nodejs-members-only',
         screenshot: clubhouse,
-        tags: ['Express', 'NodeJS'],
+        tags: ['Express', 'NodeJS', 'PostgreSQL'],
         libraries: [
             {
                 name: 'NodeJS',
@@ -119,6 +119,10 @@ export const projectList = [
                 name: 'Express',
                 icon: express
             },
+            {
+                name: 'PostgreSQL',
+                icon: postgreSQL
+            }
         ]
     },
     {

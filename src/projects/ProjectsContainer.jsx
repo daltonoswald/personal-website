@@ -6,7 +6,7 @@ export default function ProjectsContainer({shownProjects, isDark}) {
     return (
         <div className='projects-container'>
         {shownProjects.map(project =>(
-          <div key={project.name} className={'project ' + (isDark ? 'project-darkmode' : 'null')}>
+          <div key={project.name} className={'project ' + (isDark ? 'project-darkmode' : '')}>
             <div className='project-header'>
                 <h1 className='project-title'>{project.name}</h1>
                 {(project.odinProjectUrl) && (
@@ -22,7 +22,7 @@ export default function ProjectsContainer({shownProjects, isDark}) {
             <div className='library-container'>
                 {project.libraries.map((library) => (
                 <div className='library' key={library.name}>
-                    <img className='library-icon' src={library.icon} alt={library.name} />
+                    <img className={'library-icon ' + (isDark ? library.name : '')} src={library.icon} alt={library.name} />
                     {/* <p className='library-name'>{library.name}</p> */}
                 </div>
                 ))}

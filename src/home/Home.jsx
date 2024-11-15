@@ -38,7 +38,7 @@ function Home({ isDark, setIsDark }) {
         <div className='home-hero'>
           <p>I began my web development journey in April 2023 following The Odin Project and gained experience in Javascript, React, NodeJS, Mongo, and PostgreSQL to name a few.</p>
           <p>In 2019 I finished my Bachelors of Arts in Communication with a concentration in Radio/TV from California University of Pennsylvania.</p>
-          <p><Link to='/projects' className={(isDark ? 'darkmode' : null)}>Here</Link> you can find some of my projects, you can find even more on my <a href='https://github.com/daltonoswald'  className={(isDark ? 'darkmode' : null)}>Github</a></p>
+          <p><Link to='/projects' className={(isDark ? 'darkmode' : null)}>Here</Link> you can find some of my projects, you can find even more on my <a href='https://github.com/daltonoswald'  className={(isDark ? 'darkmode' : null)}>Github</a>.</p>
         </div>
       </div>
     </>

@@ -34,13 +34,13 @@ function Projects({ isDark, setIsDark }) {
     <>
     <Nav isDark={isDark} setIsDark={setIsDark} />
     <div className={'content ' + (isDark ? 'darkmode' : 'lightmode')}>
-      <div className='filter-container'>
-        <img src={react} onClick={handleFilter} id='React' className='filter-icon' />
-        <img src={nodeJS} onClick={handleFilter} id='NodeJS' className='filter-icon' />
-        <img src={express} onClick={handleFilter} id='Express' className={'filter-icon ' + (isDark ? 'darkmode-icon' : null)} />
-        <img src={postgreSQL} onClick={handleFilter} id='PostgreSQL' className='filter-icon' />
-        <img src={prisma} onClick={handleFilter} id='Prisma' className={'filter-icon ' + (isDark ? 'darkmode-icon' : null)} />
-        <img src={mongo} onClick={handleFilter} id='MongoDB' className='filter-icon' />
+      <div className={'filter-container ' + (isDark ? 'darkmode' : 'lightmode')}>
+        <img src={react} onClick={handleFilter} id='React' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '') + ((currentFilter === 'React') ? 'toggled' : '')} />
+        <img src={nodeJS} onClick={handleFilter} id='NodeJS' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '') + ((currentFilter === 'NodeJS') ? 'toggled' : '')} />
+        <img src={express} onClick={handleFilter} id='Express' className={'filter-icon ' + (isDark ? 'darkmode-icon ' : '') + ((currentFilter === 'Express') ? 'toggled' : '')} />
+        <img src={postgreSQL} onClick={handleFilter} id='PostgreSQL' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '') + ((currentFilter === 'PostgreSQL') ? 'toggled' : '')} />
+        <img src={prisma} onClick={handleFilter} id='Prisma' className={'filter-icon ' + (isDark ? 'darkmode-icon ' : '') + ((currentFilter === 'Prisma') ? 'toggled' : '')} />
+        <img src={mongo} onClick={handleFilter} id='MongoDB' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '') + ((currentFilter === 'MongoDB') ? 'toggled' : '')} />
       </div>
       <ProjectsContainer shownProjects={shownProjects} isDark={isDark} />
     </div>

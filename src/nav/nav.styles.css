@@ -39,3 +39,7 @@ a:visited {
     align-items: center;
     gap: .5rem;
 }
+
+.toggle-mode-button {
+    cursor: pointer;
+}
