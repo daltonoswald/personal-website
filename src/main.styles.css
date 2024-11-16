@@ -25,3 +25,7 @@ body {
 .darkmode-icon {
     filter: invert(97%) sepia(44%) saturate(557%) hue-rotate(224deg) brightness(125) contrast(100%);
 }
+
+.lightmode-icon {
+    filter: brightness(0%);
+}

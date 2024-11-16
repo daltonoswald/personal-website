@@ -35,12 +35,24 @@ function Projects({ isDark, setIsDark }) {
     <Nav isDark={isDark} setIsDark={setIsDark} />
     <div className={'content ' + (isDark ? 'darkmode' : 'lightmode')}>
       <div className={'filter-container ' + (isDark ? 'darkmode' : 'lightmode')}>
-        <img src={react} onClick={handleFilter} id='React' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '') + ((currentFilter === 'React') ? 'toggled' : '')} />
-        <img src={nodeJS} onClick={handleFilter} id='NodeJS' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '') + ((currentFilter === 'NodeJS') ? 'toggled' : '')} />
-        <img src={express} onClick={handleFilter} id='Express' className={'filter-icon ' + (isDark ? 'darkmode-icon ' : '') + ((currentFilter === 'Express') ? 'toggled' : '')} />
-        <img src={postgreSQL} onClick={handleFilter} id='PostgreSQL' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '') + ((currentFilter === 'PostgreSQL') ? 'toggled' : '')} />
-        <img src={prisma} onClick={handleFilter} id='Prisma' className={'filter-icon ' + (isDark ? 'darkmode-icon ' : '') + ((currentFilter === 'Prisma') ? 'toggled' : '')} />
-        <img src={mongo} onClick={handleFilter} id='MongoDB' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '') + ((currentFilter === 'MongoDB') ? 'toggled' : '')} />
+        <div onClick={handleFilter} id='React' className={'filter-icon-container ' + (isDark ? 'darkmode-icon-container ' : '') + ((currentFilter === 'React') ? 'toggled' : '')}>
+          <img src={react} onClick={handleFilter} id='React' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '')} />
+        </div>
+        <div onClick={handleFilter} id='NodeJS' className={'filter-icon-container ' + (isDark ? 'darkmode-icon-container ' : '') + ((currentFilter === 'NodeJS') ? 'toggled' : '')}>
+          <img src={nodeJS} onClick={handleFilter} id='NodeJS' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '')} />
+        </div>
+        <div onClick={handleFilter} id='Express' className={'filter-icon-container ' + (isDark ? 'darkmode-icon-container ' : '') + ((currentFilter === 'Express') ? 'toggled' : '')}>
+          <img src={express} onClick={handleFilter} id='Express' className={'filter-icon ' + (isDark ? 'darkmode-icon ' : '')} />
+        </div>
+        <div onClick={handleFilter} id='PostgreSQL' className={'filter-icon-container ' + (isDark ? 'darkmode-icon-container ' : '') + ((currentFilter === 'PostgreSQL') ? 'toggled' : '')}>
+          <img src={postgreSQL} onClick={handleFilter} id='PostgreSQL' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '')} />
+        </div>
+        <div onClick={handleFilter} id='Prisma' className={'filter-icon-container ' + (isDark ? 'darkmode-icon-container ' : '') + ((currentFilter === 'Prisma') ? 'toggled' : '')}>
+          <img src={prisma} onClick={handleFilter} id='Prisma' className={'filter-icon ' + (isDark ? 'darkmode-icon ' : '')} />
+        </div>
+        <div onClick={handleFilter} id='MongoDB' className={'filter-icon-container ' + (isDark ? 'darkmode-icon-container ' : '') + ((currentFilter === 'MongoDB') ? 'toggled' : '')}>
+          <img src={mongo} onClick={handleFilter} id='MongoDB' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '')} />
+        </div>
       </div>
       <ProjectsContainer shownProjects={shownProjects} isDark={isDark} />
     </div>
