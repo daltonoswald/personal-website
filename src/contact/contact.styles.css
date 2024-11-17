@@ -41,3 +41,15 @@ a:visited.darkmode {
 .contact-name.darkmode {
     color: #f2f2f2 !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .contact-name,
+    .link-name {
+        font-size: 12px;
+    }
+    .link-container,
+    .contact-container {
+        width: 100%;
+        margin: 5vh 0;
+    }
+}

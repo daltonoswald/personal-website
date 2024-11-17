@@ -26,3 +26,23 @@
 .home-header-greeting {
     font-size: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .home-header,
+    .home-hero {
+        margin: 5vh 0;
+    }
+
+    .profile-picture {
+        height: 125px;
+    }
+
+    .home-header-title {
+        font-size: 30px;
+    }
+
+    .home-header-greeting {
+        font-size: 16px;
+        margin: 0;
+    }
+}

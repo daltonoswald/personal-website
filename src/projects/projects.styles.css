@@ -43,3 +43,9 @@
 .darkmode-icon-container.toggled {
     box-shadow: inset 0px 0px 9px 9px #6f6f6f !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .filter-container {
+        margin: 1rem auto;
+    }
+}
