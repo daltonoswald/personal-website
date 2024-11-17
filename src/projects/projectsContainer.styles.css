@@ -49,6 +49,10 @@
     height: 5rem;
 }
 
+.project-link {
+    text-decoration: none;
+}
+
 .project-title {
     margin: 0;
 }

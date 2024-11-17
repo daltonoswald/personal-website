@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import App from './home/Home';
 import Projects from "./projects/Projects";
 import Contact from "./contact/Contact";
+import Error from './error/Error';
 
 export default function Router() {
     const [isDark, setIsDark] = useState(false)
@@ -19,16 +20,19 @@ export default function Router() {
         {
             path: '/',
             element: <App isDark={isDark} setIsDark={setIsDark} />,
-            // errorElement: <ErrorPage />
+            // errorElement: <Error isDark={isDark} setIsDark={setIsDark} />
         },
         {
             path: '/projects',
             element: <Projects isDark={isDark} setIsDark={setIsDark} />,
-            // errorElement: <ErrorPage />
         },
         {
             path: '/contact',
             element: <Contact isDark={isDark} setIsDark={setIsDark} />
+        },
+        {
+            path: '/*',
+            element: <Error isDark={isDark} setIsDark={setIsDark} />
         }
     ])
     return <RouterProvider router={router} />

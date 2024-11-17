@@ -8,7 +8,9 @@ export default function ProjectsContainer({shownProjects, isDark}) {
         {shownProjects.map(project =>(
           <div key={project.name} className={'project ' + (isDark ? 'project-darkmode' : '')}>
             <div className='project-header'>
-                <h1 className='project-title'>{project.name}</h1>
+                <a href={project.liveUrl} target="_blank" className={'project-link ' + (isDark ? 'darkmode' : '')}>
+                    <h1 className='project-title'>{project.name}</h1>
+                </a>
                 {(project.odinProjectUrl) && (
                     <a href={project.odinProjectUrl}>
                         <img className='odin-project-icon' src={odinProjectIcon} href={project.odinProjectUrl} />
