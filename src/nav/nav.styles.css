@@ -5,12 +5,14 @@
     justify-content: space-between;
     padding: 0 15vw;
     padding-top: 8px;
+    background-color: #f9fcff;
 }
 
 .nav-link {
     display: flex;
     gap: 1rem;
     text-decoration: underline;
+    color: black;
 }
 
 a:visited {
