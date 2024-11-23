@@ -11,6 +11,7 @@ import express from '../assets/icons/express-original.svg'
 import postgreSQL from '../assets/icons/postgresql-original-wordmark.svg'
 import prisma from '../assets/icons/prisma.svg'
 import mongo from '../assets/icons/mongodb-plain-wordmark.svg'
+import javascript from '../assets/icons/javascript-original.svg'
 
 
 function Projects({ isDark, setIsDark }) {
@@ -21,7 +22,7 @@ function Projects({ isDark, setIsDark }) {
   }, [])
 
   const handleFilter = (e) => {
-    if (currentFilter === e.target.id) {
+    if ((e.target.id === 'filter') || (currentFilter === e.target.id)) {
       setShownProjects(projectList)
       setCurrentFilter('')
     } else {
@@ -35,6 +36,9 @@ function Projects({ isDark, setIsDark }) {
     <Nav isDark={isDark} setIsDark={setIsDark} />
     <div className={'content ' + (isDark ? 'darkmode' : 'lightmode')}>
       <div className={'filter-container ' + (isDark ? 'darkmode' : 'lightmode')}>
+        <div onClick={handleFilter} id='filter' className={'filter-icon-container ' + (isDark ? 'darkmode-icon-container ' : '')}>
+          <div onClick={handleFilter} id='filter' className='filter-label'>Filter:</div>
+        </div>
         <div onClick={handleFilter} id='React' className={'filter-icon-container ' + (isDark ? 'darkmode-icon-container ' : '') + ((currentFilter === 'React') ? 'toggled' : '')}>
           <img src={react} onClick={handleFilter} id='React' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '')} />
         </div>
@@ -52,6 +56,9 @@ function Projects({ isDark, setIsDark }) {
         </div>
         <div onClick={handleFilter} id='MongoDB' className={'filter-icon-container ' + (isDark ? 'darkmode-icon-container ' : '') + ((currentFilter === 'MongoDB') ? 'toggled' : '')}>
           <img src={mongo} onClick={handleFilter} id='MongoDB' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '')} />
+        </div>
+        <div onClick={handleFilter} id='Javascript' className={'filter-icon-container ' + (isDark ? 'darkmode-icon-container ' : '') + ((currentFilter === 'Javascript') ? 'toggled' : '')}>
+          <img src={javascript} onClick={handleFilter} id='Javascript' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '')} />
         </div>
       </div>
       <ProjectsContainer shownProjects={shownProjects} isDark={isDark} />

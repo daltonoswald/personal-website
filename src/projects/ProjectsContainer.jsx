@@ -1,4 +1,5 @@
 import odinProjectIcon from '../assets/icons/the-odin-project.svg';
+import github from '../assets/icons/github-original.svg'
 import './projectsContainer.styles.css'
 
 export default function ProjectsContainer({shownProjects, isDark}) {
@@ -11,11 +12,14 @@ export default function ProjectsContainer({shownProjects, isDark}) {
                 <a href={project.liveUrl} target="_blank" className={'project-link ' + (isDark ? 'darkmode' : '')}>
                     <h1 className='project-title'>{project.name}</h1>
                 </a>
-                {(project.odinProjectUrl) && (
-                    <a href={project.odinProjectUrl}>
-                        <img className='odin-project-icon' src={odinProjectIcon} href={project.odinProjectUrl} />
-                    </a>
-                )}
+                <div className='project-links'>
+                    {(project.odinProjectUrl) && (
+                        <a href={project.odinProjectUrl}>
+                            <img className='odin-project-icon' src={odinProjectIcon} href={project.odinProjectUrl} />
+                        </a>
+                    )}
+                    <a href={project.githubUrl}><img src={github} className={'project-github-icon ' + (isDark ? 'darkmode-icon' : '')} alt='github icon' /></a>
+                </div>
             </div>
             <a href={project.liveUrl} target="_blank">
                 <img className='project-image' src={project.screenshot} />

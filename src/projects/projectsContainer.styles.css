@@ -3,8 +3,14 @@
     --main-light-blue: #cee3f8;
 }
 
+.project-links {
+    display: flex;
+    gap: 4px;
+}
+
 .library-icon,
-.odin-project-icon {
+.odin-project-icon,
+.project-github-icon {
     height: 32px;
 }
 
