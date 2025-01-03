@@ -59,6 +59,10 @@
     text-decoration: none;
 }
 
+.project-link-darkmode {
+    color: #f2f2f2 !important;
+}
+
 .project-title {
     margin: 0;
 }

@@ -9,7 +9,7 @@ export default function ProjectsContainer({shownProjects, isDark}) {
         {shownProjects.map(project =>(
           <div key={project.name} className={'project ' + (isDark ? 'project-darkmode' : '')}>
             <div className='project-header'>
-                <a href={project.liveUrl} target="_blank" className={'project-link ' + (isDark ? 'darkmode' : '')}>
+                <a href={project.liveUrl} target="_blank" className={'project-link ' + (isDark ? 'project-link-darkmode' : '')}>
                     <h1 className='project-title'>{project.name}</h1>
                 </a>
                 <div className='project-links'>
