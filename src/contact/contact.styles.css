@@ -27,10 +27,21 @@
 
 .contact-icon {
     height: 48px;
+    transition: .2s ease-in-out;
+}
+
+.contact-icon:hover {
+    transform: translateY(-4px)
 }
 
 .link-name {
-    font-size: 20px
+    font-size: 20px;
+    color: black;
+}
+
+.link-name:hover,
+.contact-name:hover {
+    text-decoration: underline;
 }
 
 a:visited.darkmode {

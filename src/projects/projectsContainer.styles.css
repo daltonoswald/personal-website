@@ -12,7 +12,14 @@
 .odin-project-icon,
 .project-github-icon {
     height: 32px;
+    transition: .2s ease-in-out;
 }
+
+.library-icon:hover,
+.odin-project-icon:hover,
+.project-github-icon:hover {
+    transform: scale(1.1);
+} 
 
 .Express,
 .Prisma {

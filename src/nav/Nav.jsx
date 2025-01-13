@@ -30,7 +30,7 @@ export default function Nav ({ isDark, setIsDark}) {
                     <p className='nav-name'>Dalton Oswald</p>
                 </div>
                 <a href='https://github.com/daltonoswald'><img src={github} className={'nav-icon ' + (isDark ? 'darkmode-icon' : null)} alt='github icon' /></a>
-                <a href='https://www.linkedin.com/in/dalton-oswald-8aa955148'><img src={linkedIn} className='nav-icon' alt='linkedIn icon' /></a>
+                <a href='https://www.linkedin.com/in/daltonoswald'><img src={linkedIn} className='nav-icon' alt='linkedIn icon' /></a>
                 {/* <button onClick={toggleLightDark}>Theme</button> */}
                 {(isDark) && (
                     <img className='toggle-mode-button darkmode-icon' src={lightmodeIcon} alt='toggle theme' onClick={toggleLightDark} />

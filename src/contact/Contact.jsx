@@ -26,11 +26,11 @@ export default function Contact({ isDark, setIsDark }) {
                             </a>
                         <div className='contact-item'>
                             <img src={location} className={'contact-icon ' + (isDark ? 'darkmode-icon' : 'lightmode-icon')} />
-                            <p className={'contact-name ' + (isDark ? 'darkmode' : '')}>Pittsburgh, Pennsylvania</p>
+                            <p className={'contact-location ' + (isDark ? 'darkmode' : '')}>Pittsburgh, Pennsylvania</p>
                         </div>
                     </div>
                 <div className='link-container'>
-                        <a  className='link-item' href='https://www.linkedin.com/in/dalton-oswald-8aa955148'>
+                        <a  className='link-item' href='https://www.linkedin.com/in/daltonoswald'>
                             <img src={linkedIn} className='contact-icon' />
                             <p className={'link-name ' + (isDark ? 'darkmode' : '')}>LinkedIn</p>
                         </a>
