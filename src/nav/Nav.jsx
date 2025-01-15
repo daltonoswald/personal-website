@@ -26,7 +26,7 @@ export default function Nav ({ isDark, setIsDark}) {
             </div>
             <div className='nav-title'>
                 <div className='nav-author'>
-                    <img src={profilePicture} className='nav-icon' />
+                    <img src={profilePicture} className='my-icon' />
                     <p className='nav-name'>Dalton Oswald</p>
                 </div>
                 <a href='https://github.com/daltonoswald'><img src={github} className={'nav-icon ' + (isDark ? 'darkmode-icon' : null)} alt='github icon' /></a>

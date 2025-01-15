@@ -15,6 +15,10 @@
     padding: 0 1rem;
 }
 
+.filter-label:hover {
+    text-decoration: underline;
+}
+
 .filter-icon-container {
     border-right: 1px solid black;
     height: 50px;
@@ -38,6 +42,12 @@
     height: 32px; 
     width: 32px;
     padding: .5rem;
+    transition: .25s ease-in-out;
+}
+
+.filter-icon:hover {
+    /* transform: translateY(-2px); */
+    transform: scale(1.1);
 }
 
 .filter-icon-container:hover {

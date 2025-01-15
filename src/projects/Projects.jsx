@@ -61,7 +61,7 @@ function Projects({ isDark, setIsDark }) {
           <img src={javascript} onClick={handleFilter} id='Javascript' className={'filter-icon ' + (isDark ? 'darkmode-filter-icon ' : '')} />
         </div>
       </div>
-      <ProjectsContainer shownProjects={shownProjects} isDark={isDark} />
+      <ProjectsContainer shownProjects={shownProjects} isDark={isDark} handleFilter={handleFilter} />
     </div>
     </>
   )

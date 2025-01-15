@@ -2,7 +2,7 @@ import odinProjectIcon from '../assets/icons/the-odin-project.svg';
 import github from '../assets/icons/github-original.svg'
 import './projectsContainer.styles.css'
 
-export default function ProjectsContainer({shownProjects, isDark}) {
+export default function ProjectsContainer({shownProjects, isDark, handleFilter}) {
     
     return (
         <div className='projects-container'>
@@ -28,7 +28,7 @@ export default function ProjectsContainer({shownProjects, isDark}) {
             <div className='library-container'>
                 {project.libraries.map((library) => (
                 <div className='library' key={library.name}>
-                    <img className={'library-icon ' + (isDark ? library.name : '')} src={library.icon} alt={library.name} />
+                    <img className={'library-icon ' + (isDark ? library.name : '')} src={library.icon} alt={library.name} id={library.name} onClick={handleFilter} />
                     {/* <p className='library-name'>{library.name}</p> */}
                 </div>
                 ))}
