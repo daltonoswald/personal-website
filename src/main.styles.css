@@ -21,6 +21,11 @@ body {
 .darkmode {
     background-color: #1a1a1a;
     color: #f2f2f2 !important;
+    transition: .2s ease-in-out;
+}
+
+.lightmode {
+    transition: .2s ease-in-out;
 }
 
 .darkmode-icon {

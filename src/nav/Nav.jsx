@@ -19,7 +19,7 @@ export default function Nav ({ isDark, setIsDark}) {
 
     return (
         <div className={'nav ' + (isDark ? 'darkmode' : 'lightmode')}>
-            <div className='nav-link'>
+            <div className='nav-links'>
                 <Link to='/' className={'nav-link ' + (isDark ? 'darkmode' : 'lightmode')}>Home</Link>
                 <Link to='/projects' className={'nav-link ' + (isDark ? 'darkmode' : 'lightmode')}>Projects</Link>
                 <Link to='/contact' className={'nav-link ' + (isDark ? 'darkmode' : 'lightmode')}>Contact</Link>

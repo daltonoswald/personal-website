@@ -8,11 +8,14 @@
     background-color: #f9fcff;
 }
 
-.nav-link {
+.nav-links {
     display: flex;
     gap: 1rem;
-    text-decoration: underline;
     color: black;
+}
+
+.nav-link {
+    text-decoration: underline;
 }
 
 a:visited {
