@@ -8,6 +8,7 @@ import javascript from '../assets/icons/javascript-original.svg'
 
 import odinbook from '../assets/screenshots/odinbook.png'
 import runescapedle from '../assets/screenshots/runescapedle.png'
+import playback from '../assets/screenshots/playback.png'
 import memoryCard from '../assets/screenshots/memory-card.png'
 import photoTaggingApp from '../assets/screenshots/photo-tagging-game.png'
 import clubhouse from '../assets/screenshots/club-house.png'
@@ -90,6 +91,29 @@ export const projectList = [
             {
                 name: 'MongoDB',
                 icon: mongo
+            },
+        ]
+    },
+    {
+        name: 'Playback',
+        description: 'A site to view your top artists/tracks using your Spotify Account. It is still in development mode so new users will need to be manually approved to use.',
+        githubUrl: 'https://github.com/daltonoswald/playback',
+        liveUrl: 'https://daltonoswald-playback.netlify.app/',
+        odinProjectUrl: null,
+        screenshot: playback,
+        tags: ['React', 'Express', 'NodeJS'],
+        libraries: [
+            {
+                name: 'React',
+                icon: react,
+            },
+            {
+                name: 'NodeJS',
+                icon: nodeJS
+            },
+            {
+                name: 'Express',
+                icon: express
             },
         ]
     },
