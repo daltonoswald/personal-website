@@ -74,7 +74,7 @@ export const projectList = [
         liveUrl: 'https://daltonoswald-photo-tagging-app.netlify.app/',
         odinProjectUrl: 'https://www.theodinproject.com/lessons/nodejs-where-s-waldo-a-photo-tagging-app',
         screenshot: photoTaggingApp,
-        tags: ['React', 'Express', 'NodeJS', 'MongoDB'],
+        tags: ['React', 'Express', 'NodeJS', 'PostgreSQL', 'Prisma', 'MongoDB'],
         libraries: [
             {
                 name: 'React',
@@ -87,6 +87,14 @@ export const projectList = [
             {
                 name: 'Express',
                 icon: express
+            },
+            {
+                name: 'PostgreSQL',
+                icon: postgreSQL
+            },
+            {
+                name: 'Prisma',
+                icon: prisma
             },
             {
                 name: 'MongoDB',
