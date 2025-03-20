@@ -55,7 +55,8 @@ a:visited.darkmode {
 
 @media only screen and (max-width: 600px) {
     .contact-name,
-    .link-name {
+    .link-name,
+    .contact-location {
         font-size: 12px;
     }
     .link-container,

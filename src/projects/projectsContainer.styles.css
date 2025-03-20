@@ -76,6 +76,10 @@
     margin: 0;
 }
 
+.project-title:hover {
+    text-decoration: underline;
+}
+
 .project-image {
     width: 100%;
     border: 1px solid black;

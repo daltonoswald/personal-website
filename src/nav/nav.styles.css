@@ -61,6 +61,11 @@ a:visited {
         padding: 4px;
     }
 
+    .nav-title,
+    .nav-links {
+        gap: 0.5rem;
+    }
+
     .nav-link,
     .nav-name {
         font-size: 12px;
