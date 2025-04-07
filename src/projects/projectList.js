@@ -104,7 +104,7 @@ export const projectList = [
     },
     {
         name: 'Playback',
-        description: 'A site to view your top artists/tracks using your Spotify Account. It is still in development mode so new users will need to be manually approved to use.',
+        description: 'A site to view your top artists/tracks using your Spotify Account. Playback was recently granted extended quota mode!',
         githubUrl: 'https://github.com/daltonoswald/playback',
         liveUrl: 'https://daltonoswald-playback.netlify.app/',
         odinProjectUrl: null,
